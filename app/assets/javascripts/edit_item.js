@@ -1,9 +1,4 @@
 
-// $(window).load(function(){
-//   setTimeout(function(){
-//   },500)
-// })
-
 // 商品出品ボタン押す
 $(function(){
   $('#edit_item_form').on('submit',function(e){
@@ -35,11 +30,6 @@ $(function(){
     console.log(...formdata.entries())
 
       $(function(){
-        // if ( !send_file_obj_edit[0]){
-        //   $('.item_image-fail').removeClass('hide');
-        // } else  {
-        //   $('.item_image-fail').addClass('hide');
-        // }
 
 
         if ( $('#item_name').val().length == 0){
