@@ -4,11 +4,11 @@
 
 /**
  * jquery.jpostal.js ver2.7
- * 
+ *
  * Copyright 2014, Aoki Makoto, Ninton G.K. http://www.ninton.co.jp
- * 
+ *
  * Released under the MIT license - http://en.wikipedia.org/wiki/MIT_License
- * 
+ *
  * Requirements
  * jquery.js
  */
@@ -385,7 +385,7 @@ Jpostal.Jpostal.prototype.mb_convert_kana = function (i_str, i_option) {
 
     funcs = {
         A: function (i_str) {
-            var reg = /[A-Za-z0-9!#\$%&\(\)\*\+,\-\.\/:;<=>\?@\[\]\^_`\{\|\}]/g,
+            var reg = /[A-Za-z0-9!#\$%&\(\)\*\+,\-\.\/:;<=>\?@\[\]\^_\{\|\}]/g,
                 s;
 
             s = i_str.replace(reg, function (s) {
@@ -658,7 +658,7 @@ Jpostal.Jpostal.prototype.main = function () {
 
     this.scanPostcode();
     if (this.postcode.length < this.minLen) {
-        // git hub issue #4: 郵便番号欄が0～2文字のとき、住所欄を空欄にせず、入力内容を維持してほしい 
+        // git hub issue #4: 郵便番号欄が0～2文字のとき、住所欄を空欄にせず、入力内容を維持してほしい
         return;
     }
 
